@@ -53,7 +53,7 @@ int main() {
     lseek(fd, -1 * *data, SEEK_END);
     char *buffer = malloc(*data);
     read(fd, buffer, *data);
-    printf("Most recent line: [%s]\n", buffer);
+    printf("Most recent line: \n -> %s \n", buffer);
     close(fd);
     free(buffer);
   }
